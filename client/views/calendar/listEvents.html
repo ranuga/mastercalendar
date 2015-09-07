@@ -1,0 +1,9 @@
+<div>
+    <span ng-repeat="eventSource in eventSources">
+      <label class="checkbox" for="{{eventSource.id}}">
+        <input type="checkbox" ng-model="selection.ids[eventSource.id]" name="group" id="{{eventSource.id}}" />
+        {{eventSource.name}}
+      </label>
+    </span>
+    <pre ng-bind="selection.ids | json"></pre>    
+</div>

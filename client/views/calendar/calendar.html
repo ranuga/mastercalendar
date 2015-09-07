@@ -1,0 +1,33 @@
+<div>
+  <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+</div>
+<div id="CalendarContent">
+	<div id="listSources">
+		<table class="table table-condensed">
+			<thead>
+				<th>
+				</th>
+				<th>Calendars
+				</th>
+			</thead>
+			<tbody>
+				<tr style="background-color:{{eventSource.color}};color:{{eventSource.textColor}}" ng-repeat="eventSource in eventSources">
+					<td>
+						<input class="styled" type="checkbox" ng-model="eventSource.visible" ng-change="change(eventSource,eventSource.visible)" name="group" id="{{eventSource.eventID}}" ng-checked="{{eventSource.visible}}"/>
+					</td>
+					<td>
+						{{eventSource.name}}
+					</td>
+				</tr>
+			</tbody>
+  		</table>
+	</div>
+	<div ui-calendar="uiConfig.calendar" class="span8 calendar" ng-model="eventSources" calendar="groupCalendar"></div>
+</div>
+
+<div id="eventContent" title="Event Details" style="display:none;">
+    Start: <span id="startTime"></span><br>
+    End: <span id="endTime"></span><br><br>
+    All Day : <span id="allDay"></span><br><br>
+    <p id="eventInfo"></p>
+</div>

@@ -1,0 +1,63 @@
+{
+  "name": "event",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "String",
+      "required": true
+    },
+    "eventID": {
+      "type": "Number",
+      "required": false,
+      "doc": "Event ID"
+    },
+    "description": {
+      "type": "String",
+      "required": false,
+      "doc": "description of an event"
+    },
+    "eventType": {
+      "type": "String",
+      "required": false,
+      "doc": "type of an event"
+    },
+    "start": {
+      "type": "Date",
+      "required": true,
+      "doc": "Start Date"
+    },
+    "end": {
+      "type": "Date",
+      "required": false,
+      "doc": "End Date"
+    },
+    "allDay": {
+      "type": "Boolean",
+      "required": false,
+      "doc": "Is it an All day event"
+    },
+    "duration": {
+      "type": "Number",
+      "required": false,
+      "doc": "Duration of an event"
+    },
+    "organizer": {
+      "type": "String",
+      "required": false,
+      "doc": "organizer of an event"
+    },
+    "url": {
+      "type": "String",
+      "required": false,
+      "doc": "URL to redirect on click"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

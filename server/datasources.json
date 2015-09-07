@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mastercalendar": {
+    "name": "mastercalendar",
+    "connector": "mongodb",
+    "host": "localhost",
+    "port": 27017,
+    "database": "mastercalendar"
+  }
+}

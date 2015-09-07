@@ -1,0 +1,33 @@
+{
+  "name": "jquery-ui-flat-theme",
+  "homepage": "https://github.com/ekinertac/jquery-ui-flat-theme",
+  "authors": [
+    "ekinertac <ekinertac@gmail.com>"
+  ],
+  "description": "A Flat theme for jQuery-UI",
+  "main": "jquery-ui-1.10.3.flat.min.css",
+  "keywords": [
+    "jquery",
+    "ui",
+    "flat",
+    "theme"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "502491d734",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "502491d734aa423e0f8143120e1a7b1d292f6bed"
+  },
+  "_source": "git://github.com/ekinertac/jquery-ui-flat-theme.git",
+  "_target": "*",
+  "_originalSource": "jquery-ui-flat-theme",
+  "_direct": true
+}
