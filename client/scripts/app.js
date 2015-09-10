@@ -106,7 +106,9 @@ angular
                 'scripts/directives/notifications/notifyalert.js',
                 'bower_components/angular-ui-calendar/src/calendar.js',
                 'bower_components/fullcalendar/dist/fullcalendar.min.js',
-                'bower_components/fullcalendar/dist/fullcalendar.css'              ]
+                'bower_components/fullcalendar/dist/fullcalendar.css',
+                'scripts/eventmgmt.js'
+              ]
             }),
             $ocLazyLoad.load({
                 name:'sbAdminApp',
