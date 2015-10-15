@@ -109,3 +109,10 @@ background-color: #eee;
     margin-top: 5px;
     overflow: hidden;
 }
+
+img.ui-datepicker-trigger {
+      position: relative;
+      left: -18px;
+      top: 2px;
+}
+ 
